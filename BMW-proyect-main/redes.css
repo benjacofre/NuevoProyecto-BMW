@@ -15,55 +15,54 @@
   transform: translateX(-50%);
   font-size: 4rem;
   font-weight: bold;
-  color: rgb(236, 236, 236);
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0); /* Sombra para mejorar la legibilidad */
+  color: white;
+  text-shadow: 2px 2px 5px rgb(255, 251, 251); /* Sombra para mejorar la legibilidad */
 }
 
 /* Fijar el contenido encima de la imagen */
 .content {
-  position: relative; /* Cambiado a relative para facilitar el movimiento */
-  margin-top: 740px; /* Ajusta la posición vertical */
-  margin-left: 50px; /* Ajusta la posición horizontal */
-  padding: 20px 10px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(-50%);
+  left: -30px;
+  z-index: 10;
+  padding: 30px 20px;
   border-radius: 20px;
-  clip-path: polygon(20% 0%, 70% 0%, 90% 70%, 0% 100%);
-
-  left: -10px;
-  flex-direction: column; /* Mantiene los botones en vertical */
-  align-items: justify; /* Centra los botones horizontalmente */
-  gap: 20px; /* Espacio entre botones */
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 /* Estilo de los botones */
 .btn-custom {
   font-size: 1.2rem;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 5px;
   width: 200px;
-  text-align: center;
-  color: white; /* Texto blanco */
-  text-decoration: none;
 }
 
 /* Colores personalizados para los botones */
 .btn-modelos {
   background-color: #007bff;
+  color: white;
 }
 
 .btn-electricos {
   background-color: #28a745;
+  color: white;
 }
 
 .btn-compra-online {
   background-color: #dc3545;
+  color: white;
 }
 
 .btn-mas-bmw {
   background-color: #ffc107;
+  color: white;
 }
 
-/* Efecto de hover para los botones */
+/* Botón al pasar el mouse */
 .btn-custom:hover {
   opacity: 0.8;
 }
@@ -72,8 +71,7 @@
 .social-button {
   display: flex;
   justify-content: center;
-  margin-top: -840px;
-  gap: 20px; /* Espacio entre iconos de redes sociales */
+  margin-top: 20px;
 }
 
 /* Enlace de la imagen (Botón de redes sociales) */
@@ -84,10 +82,11 @@
 
 /* Estilo de la imagen de redes sociales */
 .social-img {
-  width: 60px; /* Tamaño reducido de los iconos */
+  width: 60px;  /* Tamaño más grande y consistente */
   height: 60px;
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;  /* Bordes redondeados */
   transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: brightness(0) invert(1); /* Cambia el color a blanco */
 }
 
 /* Efecto de hover sobre el botón de redes sociales */
