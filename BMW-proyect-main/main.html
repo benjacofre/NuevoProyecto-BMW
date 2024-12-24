@@ -4,53 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Ruta corregida para style.css -->
-  <link href="./style.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <title>BMW - Redes Sociales</title>
-  <style>
-    /* Estilos de contingencia */
-    .page-container {
-      max-width: 10000px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-    }
-    .content {
-      margin-bottom: 20px;
-    }
-    .social-button img {
-      width: 50px;
-      margin: 10px;
-      cursor: pointer;
-    }
-    .section {
-      display: none;
-    }
-    .section.active {
-      display: block;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #ffffff;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+ 
 </head>
 <body>
   <div class="page-container">
     <!-- Bienvenida -->
     <div id="home" class="section active">
       <div class="welcome-text">
-        Bienvenido a BMW
+        Tienda BMW
       </div>
       <div class="content">
         <a href="modelo.html" class="btn btn-modelos">Modelos BMW</a>
@@ -58,33 +21,70 @@
         <a href="compra-online.html" class="btn btn-compra-online">Compra Online</a>
         <a href="mas-bmw.html" class="btn btn-mas-bmw">Más BMW</a>
       </div>
-      <div class="social-button">
-        <img src="assets/facebook-icon.png" alt="Facebook" onclick="showSection('redes')">
-        <img src="assets/instagram-icon.png" alt="Instagram" onclick="showSection('redes')">
-        <img src="assets/youtube-icon.png" alt="YouTube" onclick="showSection('redes')">
-      </div>
-    </div>
 
-    <!-- Redes Sociales -->
-    <div id="redes" class="section">
-      <h1>Redes Sociales de BMW</h1>
-      <p>Visita nuestras redes sociales oficiales:</p>
-      <ul>
-        <li><a href="https://www.instagram.com/bmw" target="_blank">Instagram</a></li>
-        <li><a href="https://www.youtube.com/user/BMW" target="_blank">YouTube</a></li>
-        <li><a href="https://www.facebook.com/BMW" target="_blank">Facebook</a></li>
-      </ul>
-      <button class="btn btn-secondary" onclick="showSection('home')">Volver</button>
+      <!-- Botones de redes sociales -->
+      <div class="social-button">
+        <a href="https://www.facebook.com/BMW" target="_blank">
+          <img src="assets/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/bmw" target="_blank">
+          <img src="assets/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/user/BMW" target="_blank">
+          <img src="assets/youtube-icon.png" alt="YouTube">
+        </a>
+      </div>
     </div>
   </div>
 
-  <script>
-    function showSection(sectionId) {
-      document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-      });
-      document.getElementById(sectionId).classList.add('active');
-    }
-  </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1: Canales de Atención -->
+        <div class="col-md-3 column">
+          <h5>Canales de Atención</h5>
+          <ul>
+            <li><strong>Llamadas:</strong> Llama al <a href="tel:+566006001323">600 600 13 23</a></li>
+            <li><strong>WhatsApp:</strong> Escríbenos a nuestro <a href="https://wa.me/56060001323" target="_blank">WhatsApp</a></li>
+            <li><strong>Formulario de Contacto:</strong> Déjanos tu mensaje <a href="contacto.html">Aquí</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 2: Información Adicional -->
+        <div class="col-md-3 column">
+          <h5>Más Información</h5>
+          <ul>
+            <li><a href="modelo.html">Modelos BMW</a></li>
+            <li><a href="electricos.html">Modelos Eléctricos</a></li>
+            <li><a href="compra-online.html">Compra Online</a></li>
+            <li><a href="mas-bmw.html">Más BMW</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="col-md-3 column">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="sucursales.html">Conocer Sucursales</a></li>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="terminos.html">Términos y Condiciones</a></li>
+            <li><a href="servicio-al-cliente.html">Servicio al Cliente</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Redes Sociales -->
+        <div class="col-md-3 column">
+          <h5>Redes Sociales</h5>
+          <ul>
+            <li><a href="https://www.facebook.com/BMW" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/bmw" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/user/BMW" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

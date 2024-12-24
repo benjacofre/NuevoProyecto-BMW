@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Lifestyle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mas-bmw.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const checkboxes = document.querySelectorAll(".filters input[type='checkbox']");
+            const products = document.querySelectorAll(".product");
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener("change", () => {
+                    const selectedCategories = Array.from(checkboxes)
+                        .filter(cb => cb.checked)
+                        .map(cb => cb.dataset.category.toLowerCase());
+
+                    products.forEach(product => {
+                        const productCategory = product.dataset.category.toLowerCase();
+                        product.style.display = selectedCategories.length === 0 || selectedCategories.includes(productCategory) ? "block" : "none";
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BMW Style</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar con filtros -->
+        <aside class="filters">
+            <h3>Selección de Productos</h3>
+            <label><input type="checkbox" data-category="Ropa Casual"> Ropa Casual</label><br>
+            <label><input type="checkbox" data-category="Accesorios"> Accesorios</label><br>
+
+            <h3>Opciones de Estilo</h3>
+            <label><input type="checkbox" data-category="Chaquetas"> Chaquetas</label><br>
+            <label><input type="checkbox" data-category="Poleras"> Poleras</label><br>
+            <label><input type="checkbox" data-category="Pantalones"> Pantalones</label><br>
+            <label><input type="checkbox" data-category="Camisetas de Manga Larga"> Camisetas de Manga Larga</label><br>
+            <label><input type="checkbox" data-category="Sudaderas"> Sudaderas</label><br>
+            <label><input type="checkbox" data-category="Gorras"> Gorras</label><br>
+            <label><input type="checkbox" data-category="Mochilas"> Mochilas</label><br>
+
+        </aside>
+
+        <!-- Grid de productos -->
+        <section class="products">
+            <div class="product" data-category="Poleras">
+                <a href="mercado.html">
+                    <img src="./assets/poleraM.jpg" alt="Polera M Motorsport">
+                </a>
+                <p>POLERA M MOTORSPORT</p>
+                <span>$73.500</span>
+            </div>
+
+            <div class="product" data-category="Poleras">
+                <a href="mercado.html">
+                    <img src="./assets/poleraM2.jpg" alt="Polera Motorsport">
+                </a>
+                <p>POLERA MOTORSPORT</p>
+                <span>$45.000</span>
+            </div>
+
+            <div class="product" data-category="Poleras">
+                <a href="mercado.html">
+                    <img src="./assets/polera3.png" alt="Polera MOTORSPORT">
+                </a>
+                <p>Polera MOTORSPORT</p>
+                <span>$83.400</span>
+            </div>
+
+            <div class="product" data-category="Gorras">
+                <a href="mercado.html">
+                    <img src="./assets/gorras.png" alt="Gorra Color Negro BMW">
+                </a>
+                <p>Gorra Color Negro BMW</p>
+                <span>$56.400</span>
+            </div>
+            
+            <div class="product" data-category="Gorras">
+                <a href="mercado.html">
+                    <img src="./assets/gorroblanco.png" alt="Gorra Color Blanco BMW">
+                </a>
+                <p>Gorra Color Blanco BMW</p>
+                <span>$83.300</span>
+            </div>
+
+            <div class="product" data-category="Gorras">
+                <a href="mercado.html">
+                    <img src="./assets/gorragris.png" alt="Gorra Color Gris BMW">
+                </a>
+                <p>Gorra Color Gris BMW</p>
+                <span>$28.000</span>
+            </div>
+
+            <div class="product" data-category="Accesorios">
+                <a href="mercado.html">
+                    <img src="./assets/carcasa1.png" alt="Carcasa de Teléfono BMW">
+                </a>
+                <p>Carcasa de Teléfono BMW</p>
+                <span>$5.000</span>
+            </div>
+
+            <div class="product" data-category="Accesorios">
+                <a href="mercado.html">
+                    <img src="./assets/carcasa2.png" alt="Carcasa de Teléfono BMW">
+                </a>
+                <p>Carcasa de Teléfono BMW</p>
+                <span>$10.000</span>
+            </div>
+
+            <div class="product" data-category="Accesorios">
+                <a href="mercado.html">
+                    <img src="./assets/carcasa3.png" alt="Carcasa de Teléfono BMW">
+                </a>
+                <p>Carcasa de Teléfono BMW</p>
+                <span>$15.000</span>
+            </div>
+
+            <div class="product" data-category="Accesorios">
+                <a href="mercado.html">
+                    <img src="./assets/llavero.png" alt="Llavero BMW">
+                </a>
+                <p>Llavero BMW</p>
+                <span>$12.000</span>
+            </div>
+
+            <div class="product" data-category="Accesorios">
+                <a href="mercado.html">
+                    <img src="./assets/TAZA.png" alt="Taza BMW">
+                </a>
+                <p>Taza BMW</p>
+                <span>$8.500</span>
+            </div>
+
+            <!-- Nuevos productos -->
+            <div class="product" data-category="Pantalones">
+                <a href="mercado.html">
+                    <img src="./assets/pantalon.png" alt="Pantalón Deportivo BMW">
+                </a>
+                <p>Pantalón Deportivo BMW</p>
+                <span>$68.000</span>
+            </div>
+
+            <div class="product" data-category="Camisetas de Manga Larga">
+                <a href="mercado.html">
+                    <img src="./assets/camisetalarga.png" alt="Camiseta Manga Larga BMW">
+                </a>
+                <p>Camiseta Manga Larga BMW</p>
+                <span>$52.000</span>
+            </div>
+
+            <div class="product" data-category="Sudaderas">
+                <a href="mercado.html">
+                    <img src="./assets/sudadera.png" alt="Sudadera BMW">
+                </a>
+                <p>Sudadera BMW</p>
+                <span>$85.000</span>
+            </div>
+
+            <div class="product" data-category="Mochilas">
+                <a href="mercado.html">
+                    <img src="./assets/mochila.png" alt="Mochila BMW">
+                </a>
+                <p>Mochila BMW</p>
+                <span>$95.000</span>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body {
+  background-color: #00ccffa5; /* Fondo claro por defecto */
+  background-image: url('assets/bmw-electric-background.jpg'); /* Fondo con una imagen temática de autos eléctricos */
+  background-size: cover;
+  background-position: center;
+  color: #000000; /* Color de texto negro */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco con opacidad */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+  width: 100%; /* Imágenes que ocupan todo el ancho disponible */
+  height: auto; /* Mantener la proporción de la imagen */
+  object-fit: cover; /* Asegura que las imágenes cubran todo el área sin distorsionarse */
+  border-radius: 8px;
+}
+
+.car-card-body {
+  padding: 15px;
+}
+
+.car-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000; /* Título en negro */
+}
+
+.car-description {
+  font-size: 1rem;
+  color: #777777; /* Gris oscuro para la descripción */
+  margin-top: 5px;
+}
+
+.btn-more {
+  margin-top: 10px;
+  background-color: #00bcd4; /* Color cian para el botón */
+  color: #ffffff; /* Texto en blanco */
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .car-card img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.promotions, .video-section, .service-section {
+  margin-top: 50px;
+  padding: 30px 0;
+  background-color: #e0f7fa; /* Fondo cian */
+  border-radius: 8px;
+}
+
+.service-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #006064; /* Texto cian oscuro */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #004d4d; /* Texto cian oscuro */
+}
+
+.service-section ul {
+  font-size: 16px;
+  margin-left: 30px;
+  line-height: 1.5;
+  color: #004d4d; /* Texto cian oscuro */
+}
+
+.service-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-section h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #006064; /* Texto cian oscuro */
+  margin-top: 20px;
+}
+
+.service-section .benefits, .service-section .includes, .service-section .legal {
+  margin-top: 30px;
+}
+
+.service-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: linear-gradient(to top, #000, #333); /* Gradiente para darle profundidad */
+  color: #fff; /* Texto blanco */
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 5px solid #e0f7fa; /* Línea cian para destacar */
+}
+
+.footer h5 {
+  color: #fff; /* Texto blanco */
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0f7fa; /* Línea decorativa bajo el título */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  color: #fff; /* Enlaces en blanco */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer ul li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.page-container {
+  max-width: 10000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-button img {
+  width: 50px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

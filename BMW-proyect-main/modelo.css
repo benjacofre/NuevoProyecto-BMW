@@ -1,0 +1,98 @@
+body {
+    background-color: #00ccff5a; /* Color de fondo general de la página */
+    background-image: url('./assets/bmw-2964072_1280.png'); /* Nueva imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center;
+    color: #000000; /* Color de texto oscuro para buena legibilidad */
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    position: relative;
+    z-index: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para las tarjetas de autos */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1; /* Asegura que el contenedor esté por encima del fondo */
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.car-card img {
+    width: 100%; /* Imágenes ocupan todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsión */
+    border-radius: 8px;
+}
+
+.car-card-body {
+    padding: 15px;
+}
+
+.car-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.car-description {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+.btn-more {
+    margin-top: 10px;
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Mejora la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .car-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Fondo negro para el footer */
+    color: #111;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1; /* Asegura que el footer esté por encima del fondo */
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .column h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer .column ul li {
+    margin: 10px 0;
+}
+
+/* Ajustes para distribución simétrica */
+.footer .column {
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .footer .column {
+        text-align: center;
+    }
+}
